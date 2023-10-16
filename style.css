@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+#desktop {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#left-folders, #right-folders {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.folder {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.folder img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.window {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 320px;
+    min-height: 240px;
+    background-color: #ff4d4d; /* Red */
+    padding: 20px;
+    border: 4px solid #000; /* Black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.4);
+    cursor: move;
+    overflow: auto;
+    z-index: 1000;
+    font-family: 'Press Start 2P', cursive; /* Pixel art font */
+}
+
+.window-content {
+    background-color: #e60000; /* Darker Red */
+    padding: 10px;
+    border: 2px solid #000; /* Black border */
+    box-shadow: inset 0 0 10px #000; /* Black inner shadow */
+}
+
+.content-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px #000; /* Black text shadow */
+}
+
+/* Button styling with pixel art feel */
+.window-content button {
+    background-color: #000; /* Black */
+    color: #fff; /* White text */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0; /* Square borders for retro feel */
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.window-content button:hover {
+    background-color: #333; /* Dark grey on hover */
+}
+
+
+.content-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+
+button {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+button img {
+    border: none;
+    display: block;
+}
+
+#dateTimeDisplay {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(135deg, #ed6d6d, #d48383);
+    color: #fff;
+    padding: 15px 30px;
+    border-top-left-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s, color 0.5s;
+}
+
+
+.hidden {
+    display: none;
+}

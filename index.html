@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="Items\Videos\Background\Mario_Background1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div id="dateTimeDisplay"></div>
+        
+        <div id="desktop">
+            <!-- Left side folders -->
+            <div id="left-folders">
+                <div class="folder" onclick="showWindow('projectWindow')" id="Project_Folder">
+                    <img src="Items/Images/Icons/Pixel_Folder1.png" alt="Folder Icon">
+                    <p style="color: white">Projects</p>
+                </div>
+                <div class="folder" onclick="showWindow('aboutWindow')" id="About_Folder">
+                    <img src="Items/Images/Icons/Pixel_Folder1.png" alt="Folder Icon">
+                    <p style="color: white">About</p>
+                </div>
+                <div class="folder" onclick="toggleVisibility('contactWindow')" id="Contact_Folder">
+                    <img src="Items/Images/Icons/Pixel_Folder1.png" alt="Folder Icon">
+                    <p style="color: white">Contact</p>
+                </div>
+            </div>
+
+            <!-- Right side folders -->
+            <div id="right-folders">
+                <div class="folder" onclick="showWindow('githubWindow')" id="Project_Folder">
+                    <img src="Items/Images/Icons/Pixel_Folder1.png" alt="Folder Icon">
+                    <p style="color: white">Github</p>
+                </div>
+                <div class="folder" onclick="showWindow('linkedInWindow')" id="About_Folder">
+                    <img src="Items/Images/Icons/Pixel_Folder1.png" alt="Folder Icon">
+                    <p style="color: white">LinkedIn</p>
+                </div>           
+        </div>
+
+        <div id="projectWindow" class="window">
+            <div class="window-content">
+                <button onclick="hideWindow('projectWindow')">Close</button>
+                <div class="content-header">Project Content</div>
+            </div>
+            <button onclick="window.location.href='Visual/Pages/achievment1.html'">
+                <img src="Items/Images/ai_image.jpg" alt="Click Me">
+            </button>
+            <button onclick="window.location.href='Visual/Pages/achievment1.html'">
+                <img src="Items/Images/ai_image.jpg" alt="Click Me">
+            </button>
+        </div>
+
+        <div id="aboutWindow" class="window">
+            <div class="window-content">
+                <button onclick="hideWindow('aboutWindow')">Close</button>
+                <div class="content-header">About Content</div>
+                <!-- Your about content here -->
+            </div>
+        </div>
+
+        <div id="contactWindow" class="window hidden">
+            <div class="window-content">
+                <button onclick="hideWindow('contactWindow')">Close</button>
+                <div class="content-header">Contact Content</div>
+                <!-- Your contact content here -->
+            </div>
+        </div>
+
+        <div id="githubWindow" class="window hidden">
+            <div class="window-content">
+                <button onclick="hideWindow('githubWindow')">Close</button>
+                <div class="content-header">Github Content</div>
+                <!-- Your contact content here -->
+            </div>
+        </div>
+
+        <div id="linkedInWindow" class="window hidden">
+            <div class="window-content">
+                <button onclick="hideWindow('linkedInWindow')">Close</button>
+                <div class="content-header">linkedIn Content</div>
+                <!-- Your contact content here -->
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
